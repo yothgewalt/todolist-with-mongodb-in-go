@@ -13,7 +13,7 @@ import (
 func main() {
 	serverAPIOptions := options.ServerAPI(options.ServerAPIVersion1)
 	clientOptions := options.Client().
-		ApplyURI("mongodb+srv://mongdb:m8Wkv3sZWO8ojUJ4@einer-cluster.aahjt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").
+		ApplyURI("mongodb+srv://mongdb:<password>@einer-cluster.aahjt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").
 		SetServerAPIOptions(serverAPIOptions)
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
