@@ -1,0 +1,16 @@
+DELETE http://localhost:3000/todo/625147af3f7ed640f954ad3d
+Accept: application/json
+
+###
+POST http://localhost:3000/todo
+Content-Type: application/json
+
+{
+  "title": "do a homework in tonight."
+}
+
+###
+GET http://localhost:3000/todo
+Accept: application/json
+
+###
